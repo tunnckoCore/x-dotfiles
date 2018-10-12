@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH="$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH"
 
 # Path to your oh-my-zsh installation.
   export ZSH="/home/charlike/.oh-my-zsh"
@@ -8,7 +8,7 @@
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-# It is set by `pure-prompt` by sindresorhus
+# It is set by `pure-prompt` by sindresorhus, install from AUR
 ZSH_THEME=""
 
 # Set list of themes to pick from when loading at random
@@ -91,7 +91,7 @@ source $ZSH/oh-my-zsh.sh
 # export ARCHFLAGS="-arch x86_64"
 
 # ssh
-# export SSH_KEY_PATH="~/.ssh/rsa_id"
+export SSH_KEY_PATH="~/.ssh/id_rsa"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -102,13 +102,14 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# Pure Prompt by Sindre Sorhus
+# Pure Prompt by Sindre Sorhus, install from AUR
 autoload -U promptinit; promptinit
 prompt pure
 
 # ASDF Version Manager for Nodejs, Ruby, Elixir and more
 # Docs:https://github.com/asdf-vm/asdf
 
+# Not needed when you have Oh My Zsh plugin for it
 #source $HOME/.asdf/asdf.sh
 #source $HOME/.asdf/completions/asdf.bash
 
@@ -134,4 +135,4 @@ export NPM_GLOBAL_BIN="$ASDF_DIR/installs/nodejs/$NODE_CURRENT_VERSION/.npm/bin"
 export PATH="$NPM_GLOBAL_BIN:./node_modules/.bin:$PATH"
 
 # Only asks once, on first opened terminal, then everything is great.
-eval `keychain --timeout 999999999999 --quiet --eval --nogui $HOME/.ssh/id_rsa`
+eval `keychain --timeout 999999999999 --quiet --eval --nogui $SSH_KEY_PATH`

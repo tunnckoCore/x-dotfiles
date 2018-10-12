@@ -1,4 +1,3 @@
-
 alias ls="ls --color --group-directories-first -F"
 alias lsal="ls -al"
 alias mkdir="mkdir -pv"
@@ -14,8 +13,8 @@ alias grep="grep --color=tty -d skip"
 alias opn="xdg-open"
 alias sk="screenkey"
 
-alias zshc="nano ~/.zsh-charlike"
-alias ali="nano ~/.zsh-aliases"
+alias zshc="nano ~/.zshrc"
+alias ali="nano ~/.aliases"
 
 alias gpull="git pull origin $(git_current_branch)"
 alias gpush="git push origin $(git_current_branch)"
