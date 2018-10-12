@@ -1,0 +1,42 @@
+
+alias ls="ls --color --group-directories-first -F"
+alias lsal="ls -al"
+alias mkdir="mkdir -pv"
+alias cl="clear"
+alias gcm="git commit -s -S -m "$1""
+alias gall="git add --all"
+alias gp="git push"
+
+alias pbcopy="xsel --clipboard --input"
+alias pbpaste="xsel --clipboard --output"
+
+alias grep="grep --color=tty -d skip"
+alias opn="xdg-open"
+alias sk="screenkey"
+
+alias zshc="nano ~/.zsh-charlike"
+alias ali="nano ~/.zsh-aliases"
+
+alias gpull="git pull origin $(git_current_branch)"
+alias gpush="git push origin $(git_current_branch)"
+
+# confirmation #
+alias mv="mv -i"
+alias cp="cp -i"
+alias ln="ln -i"
+
+alias free='free -m' # show sizes in MB
+alias more=less
+
+# Parenting changing perms on / #
+alias chown="chown --preserve-root"
+alias chmod="chmod --preserve-root"
+alias chgrp="chgrp --preserve-root"
+
+gfix () {
+  git commit -s -S -m "fix: $1"
+}
+
+gfeat () {
+  git commit -s -S -m "feat: $2"
+}

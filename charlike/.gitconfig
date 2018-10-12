@@ -1,0 +1,43 @@
+[user]
+	name = Charlike Mike Reagent
+	user = tunnckoCore
+	email = mameto2011@gmail.com
+	signingkey = XXX
+
+[github]
+	username = olstenlarck
+	token = XXX
+
+[commit]
+	gpgsign = true
+
+[push]
+	followTags = true
+
+[gpg]
+	program = gpg2
+
+[color]
+	branch = auto
+	diff = auto
+	status = auto
+
+[color "branch"]
+	current = red reverse
+	local = blue
+	remote = green
+
+[color "diff"]
+	meta = yellow
+	frag = magenta
+	old = red bold
+	new = green
+	plain = white
+
+[color "status"]
+	added = green
+	changed = yellow
+	untracked = cyan
+
+#[credential]
+#	helper = /usr/share/git/credential/gnome-keyring/git-credential-gnome-keyring
