@@ -135,4 +135,4 @@ export NPM_GLOBAL_BIN="$ASDF_DIR/installs/nodejs/$NODE_CURRENT_VERSION/.npm/bin"
 export PATH="$NPM_GLOBAL_BIN:./node_modules/.bin:$PATH"
 
 # Only asks once, on first opened terminal, then everything is great.
-eval `keychain --timeout 999999999999 --quiet --eval --nogui $SSH_KEY_PATH`
+eval `keychain --timeout 999999999999 --quiet --eval --nogui ~/.ssh/id_rsa`
