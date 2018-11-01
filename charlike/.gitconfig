@@ -1,11 +1,11 @@
 [user]
 	name = Charlike Mike Reagent
-	user = tunnckoCore
+	username = tunnckoCore
 	email = mameto2011@gmail.com
 	signingkey = XXX
 
 [github]
-	username = olstenlarck
+	username = tunnckoCore
 	token = XXX
 
 [commit]
