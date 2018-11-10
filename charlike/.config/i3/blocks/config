@@ -55,7 +55,7 @@ interval=100
 [separator]
 
 [date]
-command=echo "`date +' %B %d'`"
+command=echo "`date +' %B %d, %a'`"
 interval=22800
 label=
 
