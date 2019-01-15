@@ -1,7 +1,10 @@
 alias ls="ls --color --group-directories-first -F"
+alias ll="ls -1a"
 alias lsal="ls -al"
+
 alias mkdir="mkdir -pv"
 alias cl="clear"
+
 alias gcm="git commit -s -S -m "$1""
 alias gall="git add --all"
 alias gp="git push"
@@ -13,11 +16,14 @@ alias grep="grep --color=tty -d skip"
 alias opn="xdg-open"
 alias sk="screenkey"
 
+alias ..="cd .."
+
 alias zshc="nano ~/.zshrc"
 alias ali="nano ~/.aliases"
+alias sli="source ~/.aliases"
 
-alias gpull="git pull origin $(git_current_branch)"
-alias gpush="git push origin $(git_current_branch)"
+# alias gpull="git pull origin $(git_current_branch)"
+# alias gpush="git push origin $(git_current_branch)"
 
 # confirmation #
 alias mv="mv -i"
@@ -37,5 +43,5 @@ gfix () {
 }
 
 gfeat () {
-  git commit -s -S -m "feat: $2"
+  git commit -s -S -m "feat: $1"
 }
