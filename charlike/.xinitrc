@@ -9,8 +9,6 @@ usermodmap=$HOME/.Xmodmap
 sysresources=/etc/X11/xinit/.Xresources
 sysmodmap=/etc/X11/xinit/.Xmodmap
 
-DEFAULT_SESSION='i3 -c ~/.conig/i3/config --shmlog-size 0'
-
 # merge in defaults and keymaps
 
 if [ -f $sysresources ]; then
@@ -38,4 +36,4 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
     unset f
 fi
 
-exec i3 -c ~/.conig/i3/config --shmlog-size 0
+exec i3 -c ~/.config/i3/config --shmlog-size 0

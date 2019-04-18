@@ -1,6 +1,7 @@
 # # If you come from bash you might have to change your $PATH.
 export PATH="$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH"
 fpath=("$HOME/.local/share/zsh/site-functions" $fpath)
+
 # # Path to your oh-my-zsh installation.
 #   export ZSH="/home/charlike/.oh-my-zsh"
 
@@ -131,11 +132,9 @@ export GIT_CONFIG_TOKEN="`echo 'generate new one'`"
 
 # # export NODE_CURRENT_VERSION=$(asdf current nodejs | sed 's/ .*//')
 # export NPM_GLOBAL_BIN="$ASDF_DIR/installs/nodejs/$NODE_CURRENT_VERSION/.npm/bin"
-export PATH="$PATH:./node_modules/.bin:$HOME/.yarn/bin"
+export PATH="./node_modules/.bin:$PATH"
 
 # # Only asks once, on first opened terminal, then everything is great.
 # # eval `keychain --timeout 999999999999 --quiet --eval --nogui ~/.ssh/id_rsa`
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+source ~/.zsh-keybindings

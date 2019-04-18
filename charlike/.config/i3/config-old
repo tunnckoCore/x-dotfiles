@@ -52,7 +52,7 @@ set $base14 "#c0b7f9"
 set $base15 "#fcc09e"
 
 # Workspaces
-set $ws1    "1: "
+set $ws1    "1:"
 set $ws2    "2:"
 set $ws3    "3:"
 set $ws4    "4:"
@@ -135,7 +135,6 @@ bindsym $super+h        $exec pcmanfm ~/
 
 # hint: use `xprop` and search for `WM_CLASS`
 # Open specific applications in floating mode
-for_window [class="^.*"] border pixel 1
 for_window [class="[.]*"] floating enable
 for_window [class="Xfce4-terminal" instance="xfce4-terminal" title="^Terminal 1"] floating disable
 for_window [class="URxvt"] floating disable
