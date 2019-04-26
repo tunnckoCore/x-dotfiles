@@ -52,7 +52,7 @@ set $base14 "#c0b7f9"
 set $base15 "#fcc09e"
 
 # Workspaces
-set $ws1    "1: "
+set $ws1    "1:"
 set $ws2    "2:"
 set $ws3    "3:"
 set $ws4    "4:"
@@ -123,7 +123,7 @@ bindsym $super+d        $exec i3-dmenu-desktop --dmenu="~/.config/i3/scripts/dme
 #bindsym $super+d $exec dmenu_recency
 
 # launch categorized menu
-bindsym $super+a $exec morc_menu
+#bindsym $super+a $exec morc_menu
 
 # Launching programs
 # Start Applications
@@ -165,7 +165,7 @@ bindsym --release Num_Lock     exec pkill -SIGRTMIN+11 i3blocks
 
 # Volume Control with Alsa Mixer
 # requires: alsa-lib alsa-utils
-# Check with: speaker-test -c2)
+#z Check with: speaker-test -c2)
 bindsym $super+z exec amixer -q set Master 5%+ unmute
 bindsym $super+x exec amixer -q set Master toggle
 bindsym $super+c exec amixer -q set Master 5%- unmute
@@ -235,15 +235,15 @@ bindsym $super+q    		kill
 #bindsym $super+9 $exec blurlock
 
 # Autostart applications
-$exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+#$exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 
-$exec nm-applet
-$exec xfce4-power-manager
-$exec pamac-tray
+#$exec nm-applet
+#$exec xfce4-power-manager
+#$exec pamac-tray
 # $exec clipit
 # $exec blueman-applet
 # exec_always --no-startup-id sbxkb
-$exec start_conky_maia
+#$exec start_conky_maia
 #$exec start_conky_green
 
 #$exec xautolock -time 140 -locker blurlock
@@ -300,3 +300,4 @@ client.urgent              $base02 	$base08 	$base00 	$base15
 
 # hide/unhide i3status bar
 bindsym $super+m bar mode toggle
+
