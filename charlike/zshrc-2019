@@ -1,6 +1,7 @@
 # # If you come from bash you might have to change your $PATH.
 export PATH="$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH"
 fpath=("$HOME/.local/share/zsh/site-functions" $fpath)
+
 # # Path to your oh-my-zsh installation.
 #   export ZSH="/home/charlike/.oh-my-zsh"
 
@@ -105,6 +106,9 @@ export SSH_KEY_PATH="~/.ssh/id_rsa"
 autoload -U promptinit; promptinit
 prompt pure
 
+# Autocompletion
+autoload -U compinit; compinit
+
 # # ASDF Version Manager for Nodejs, Ruby, Elixir and more
 # # Docs:https://github.com/asdf-vm/asdf
 
@@ -135,3 +139,6 @@ export PATH="./node_modules/.bin:$PATH"
 
 # # Only asks once, on first opened terminal, then everything is great.
 # # eval `keychain --timeout 999999999999 --quiet --eval --nogui ~/.ssh/id_rsa`
+
+source ~/.zsh-keybindings
+
