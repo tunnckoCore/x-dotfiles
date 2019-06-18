@@ -58,7 +58,7 @@ set $ws3    "3:"
 set $ws4    "4:"
 set $ws5    "5:"
 set $ws6    "6:"
-set $ws7    "7:"
+set $ws7    "7:=>"
 set $ws8    "8:"
 set $ws9    "9:"
 
@@ -94,7 +94,7 @@ assign [class="Xfce4-terminal" title="htop"] $ws7
 assign [class="smplayer"] $ws8
 assign [class="Simplescreenrecorder"] $ws8
 
-font pango:			Noto Sans 14
+font pango:			"Fira Code Medium 13"
 floating_modifier		$super
 focus_follows_mouse		no
 hide_edge_borders		both
@@ -150,8 +150,8 @@ bindsym $super+$shift+n 	$exec ~/.config/i3/scripts/kblayout_phonetic
 bindsym $super+$shift+m 	$exec ~/.config/i3/scripts/kblayout_bg
 
 # Terminals for left and right hand
-bindsym $super+t 				exec xfce4-terminal --title="Terminal X"
-bindsym $super+$enter 			exec urxvt
+bindsym $super+t 		exec xfce4-terminal --title="Terminal X"
+bindsym $super+$enter 		exec urxvt
 bindsym $super+$shift+$enter 	exec i3-sensible-terminal
 
 
@@ -272,7 +272,7 @@ exec_always --no-startup-id setxkbmap -layout "us,bg(phonetic)" -option caps:esc
 bar {
 	position bottom
 	tray_padding 5
-	font pango: Liberation Mono 13
+	font pango: Fira Code Medium 13
 	i3bar_command i3bar
 	#status_command i3status
 	status_command i3blocks -c ~/.config/i3/blocks/config
